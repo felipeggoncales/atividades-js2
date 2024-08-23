@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calcular Idade para Dirigir</title>
+    <script>
+        const eua = 21;
+        const brasil = 18;
+        const escocia = 16;
+
+        let maioridadeEua = '';
+        let maioridadeBrasil =  '';
+        let maioridadeEscocia = '';
+
+        let user = parseInt(prompt('Informe sua idade: '))
+
+        if (user >= 18) {
+            maioridadeBrasil = 'Maior de Idade';
+        } else {
+            maioridadeBrasil = 'Menor de Idade';
+        }
+
+        if (user >= 21) {
+            maioridadeEua = 'Maior de Idade';
+        } else {
+            maioridadeEua = 'Menor de Idade';
+        }
+
+        if (user >= 16) {
+            maioridadeEscocia = 'Maior de Idade';
+        } else {
+            maioridadeEscocia = 'Menor de Idade';
+        }
+
+        alert('Brasil: '+maioridadeBrasil+' | EUA: '+maioridadeEua+' | Escócia: '+maioridadeEscocia)
+    </script>
+</head>
+<body>
+
+</body>
+</html>
