@@ -8,8 +8,10 @@
         let nota = parseFloat(prompt('Informe a nota (0-100): '))
         if (nota >= 60) {
             alert('Aluno aprovado')
-        } else {
+        } else if (nota < 60 && nota >= 0) {
             alert('Aluno reprovado')
+        } else {
+            alert('Nota inválida')
         }
     </script>
 </head>

@@ -12,22 +12,22 @@
         let nota = parseInt(prompt('Informe a nota: '));
         let grade = '';
 
-        calcGrade() {
-            if (grade >= 90 && grade <= 100) {
+        function calcGrade() {
+            if (nota >= 90 && nota <= 100) {
                 grade = 'A'
-            } else if (grade < 90 && grade >= 80) {
+            } else if (nota < 90 && nota >= 80) {
                 grade = 'B';
-            } else if (grade < 80 && grade >= 70) {
+            } else if (nota < 80 && nota >= 70) {
                 grade = 'C';
-            } else if (grade < 70 && grade >= 60) {
+            } else if (nota < 70 && nota >= 60) {
                 grade = 'D';
-            } else if (grade < 60) {
+            } else if (nota < 60) {
                 grade = 'F';
             } else {
                 grade = 'Inválida';
             }
 
-            alert('Grade '+grade)
+            alert('Grade: '+grade)
         }
 
         calcGrade()

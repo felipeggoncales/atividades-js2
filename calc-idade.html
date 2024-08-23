@@ -8,8 +8,10 @@
         let idade = parseInt(prompt('Informe sua idade: '))
         if (idade >= 18) {
             alert('Apto a tirar carteira de motorista')
-        } else {
+        } else if (idade >= 0 && idade < 18) {
             alert('Proibido! É necessário ter mais de 18 anos para tirar carteira de motorista')
+        } else {
+            alert('Idade inválida')
         }
     </script>
 </head>
