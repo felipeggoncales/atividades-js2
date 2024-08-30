@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-br" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calcular Idade para Dirigir</title>
+    <script>
+        let primos = [2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47, 53, 59, 61, 67, 71, 73, 79, 83, 89, 97];
+        let num = parseInt(prompt('Insira um número de 0 a 100: '))
+        let value = primos.includes(num) ? 1 : 0;
+
+        if (value == 1) {
+            alert(num+' é primo')
+        } else {
+            alert(num+' não é primo')
+        }
+    </script>
+</head>
+<body>
+
+</body>
+</html>
